@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import like from "../../../public/icons/like.png";
 
 interface LikeBtnProps {
   liked: boolean; // se o botao foi clicado
@@ -8,11 +10,11 @@ interface LikeBtnProps {
 const LikeBtn: React.FC<LikeBtnProps> = ({ liked, onLike }) => {
   return (
     // botao de like
-    <img
-      src={liked ? "/icons/like_filled.png" : "/icons/like.png"}
-      alt="Like"
-      className="cursor-pointer mr-2 w-8 p-1 rounded-full bg-sage"
-    />
+    <Image
+      src={like}
+      alt=""
+      className="cursor-pointer mr-2 w-8 p-1 rounded-full bg-cinnamon"
+    ></Image>
   );
 };
 

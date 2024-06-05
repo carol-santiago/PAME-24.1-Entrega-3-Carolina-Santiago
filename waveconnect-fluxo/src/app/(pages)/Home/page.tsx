@@ -17,7 +17,10 @@ const Home = () => {
   return (
     <div className="flex">
       <Sidebar />
-      <PostList posts={posts} onLike={handleLike} onRepost={handleRepost} />
+      <div className="flex flex-col w-full h-screen py-10">
+        <h1 className="text-3xl font-bold mb-6">Timeline</h1>
+        <PostList posts={posts} onLike={handleLike} onRepost={handleRepost} />
+      </div>
     </div>
   );
 };

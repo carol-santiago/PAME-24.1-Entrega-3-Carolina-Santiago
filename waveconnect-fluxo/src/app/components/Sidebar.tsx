@@ -1,5 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import notificationbell from "../../../public/icons/notificationbell.png";
+import profile from "../../../public/icons/profile.png";
+import home from "../../../public/icons/home.png";
+import search from "../../../public/icons/search.png";
+import logout from "../../../public/icons/logout.png";
 
 const Sidebar: React.FC = () => {
   return (
@@ -9,11 +15,7 @@ const Sidebar: React.FC = () => {
         {/* barra de pesquisa - AO CLICAR NA LUPA, LEVA PARA A LISTA DE USERS */}
         {/* funcionalidade real ainda nao implementada */}
         <Link href={"userlist"}>
-          <img
-            src={"/icons/search.png"}
-            alt="home"
-            className="cursor-pointer  w-9"
-          />
+          <Image src={search} alt="" className="cursor-pointer w-9"></Image>
         </Link>
 
         <input
@@ -26,32 +28,24 @@ const Sidebar: React.FC = () => {
       </div>
       <Link href={"home"}>
         <div className="flex flex-row mb-4 items-center">
-          <img
-            src={"/icons/home.png"}
-            alt="home"
-            className="cursor-pointer  w-9"
-          />
+          <Image src={home} alt="" className="cursor-pointer w-9"></Image>
           <p className="text-white font-semibold">Início</p>
         </div>
       </Link>
       <Link href={"profile"}>
         <div className="flex flex-row mb-4  items-center">
-          <img
-            src={"/icons/profile.png"}
-            alt="profile"
-            className="cursor-pointer w-9"
-          />
+          <Image src={profile} alt="" className="cursor-pointer w-9"></Image>
           <p className="text-white font-semibold">Perfil</p>
         </div>
       </Link>
 
       <Link href={"notifications"}>
         <div className="flex flex-row mb-4  items-center">
-          <img
-            src={"/icons/notifications.png"}
-            alt="notifications"
+          <Image
+            src={notificationbell}
+            alt=""
             className="cursor-pointer w-9"
-          />{" "}
+          ></Image>
           <p className="text-white font-semibold">Notificações</p>
         </div>
       </Link>
@@ -59,11 +53,7 @@ const Sidebar: React.FC = () => {
         {/* botao de logout - AO CLICAR, LEVA PARA A PAGINA DE LOGIN
         nao existe sistema de logout real ainda */}
         <div className="flex flex-row mb-4 items-center">
-          <img
-            src={"/icons/logout.png"}
-            alt="logout"
-            className="cursor-pointer mr-2 w-9"
-          />
+          <Image src={logout} alt="" className="cursor-pointer w-9"></Image>
           <p className="text-white font-semibold">Logout</p>
         </div>
       </Link>

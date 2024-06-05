@@ -42,7 +42,7 @@ const CadastroForm: React.FC = () => {
         />
       </div>
       {/* botao de submit */}
-      <SubmitBtn name="Cadastrar" rota="login"></SubmitBtn>
+      <SubmitBtn name="Cadastrar" rota="cadastro"></SubmitBtn>
       {/* botao de voltar para a pagina de login */}
       <SubmitBtn name="Voltar para Login" rota="login"></SubmitBtn>
     </form>
