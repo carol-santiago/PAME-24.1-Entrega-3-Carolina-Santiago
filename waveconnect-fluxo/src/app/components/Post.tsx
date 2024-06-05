@@ -21,7 +21,7 @@ const Post: React.FC<PostProps> = ({ post, onLike, onRepost }) => {
       <p>{post.content}</p>
       <div className="flex items-center mt-2">
         <LikeBtn liked={post.liked} onLike={() => onLike(post.id)} />
-        <RepostBtn onRepost={() => onRepost(post.id)} />
+        <RepostBtn />
         <CommentBtn />
       </div>
     </div>

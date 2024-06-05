@@ -2,6 +2,7 @@ import React from "react";
 
 const RepostBtn: React.FC = () => {
   return (
+    // botao de repost (nao faz nada ainda)
     <img
       src="/icons/repost.png"
       alt="Repost"

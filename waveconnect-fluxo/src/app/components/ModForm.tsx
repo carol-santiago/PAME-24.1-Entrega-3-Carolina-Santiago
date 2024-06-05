@@ -2,8 +2,9 @@ import React from "react";
 import SubmitBtn from "./SubmitBtn";
 import Link from "next/link";
 
-const CadastroForm: React.FC = () => {
+const ModForm: React.FC = () => {
   return (
+    // formulario de modificação de dados (apenas interface, nao tem back-end ainda)
     <form className="flex flex-col gap-4 w-full p-4 items-center">
       <h2 className="self-start text-sage font-semibold text-xl">
         Modificar Dados:
@@ -66,4 +67,4 @@ const CadastroForm: React.FC = () => {
   );
 };
 
-export default CadastroForm;
+export default ModForm;

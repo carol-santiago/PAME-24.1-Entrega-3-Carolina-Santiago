@@ -3,6 +3,7 @@ import SubmitBtn from "./SubmitBtn";
 
 const CadastroForm: React.FC = () => {
   return (
+    // formulario de cadastro
     <form className="flex flex-col gap-4 w-[60%] p-4 items-center">
       <div className="w-full">
         <label className="block mb-1">Usuário</label>
@@ -40,7 +41,9 @@ const CadastroForm: React.FC = () => {
           required
         />
       </div>
+      {/* botao de submit */}
       <SubmitBtn name="Cadastrar" rota="login"></SubmitBtn>
+      {/* botao de voltar para a pagina de login */}
       <SubmitBtn name="Voltar para Login" rota="login"></SubmitBtn>
     </form>
   );

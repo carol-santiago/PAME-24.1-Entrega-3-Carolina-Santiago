@@ -7,8 +7,9 @@ interface CommentProps {
 }
 
 const Comment: React.FC<CommentProps> = ({ comment }) => {
+  // componente de comentario
   return (
-    <div className="bg-gray-100 p-2 rounded mb-2">
+    <div className="p-2 rounded mb-2">
       <p>{comment.text}</p>
     </div>
   );

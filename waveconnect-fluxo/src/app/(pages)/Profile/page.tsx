@@ -12,22 +12,13 @@ const Profile = () => {
           <div className=" w-full">
             <div className="flex flex-col items-center mb-4">
               <img
-                src="/icons/profile.png"
+                src="/icons/profile.png" // imagem de perfil
                 alt="Profile"
                 className="w-24 h-24 rounded-full mb-4 bg-sage p-2"
               />
-              {/* <input
-                type="text"
-                placeholder="Nome"
-                className="w-min placeholder:text-black"
-              />
-              <input
-                type="text"
-                placeholder="@Username"
-                className="w-min placeholder:text-black"
-              /> */}
-              <h2 className="text-xl font-semibold">(Nome)</h2>
 
+              <h2 className="text-xl font-semibold">(Nome)</h2>
+              {/* Dados do perfil */}
               <p>@(Username)</p>
             </div>
             <div className="w-full text-left">
@@ -43,7 +34,7 @@ const Profile = () => {
             </div>
           </div>
           <div className="w-full">
-            <ModForm></ModForm>
+            <ModForm></ModForm> {/* formulario de modificacao de dados */}
           </div>
         </div>
       </div>

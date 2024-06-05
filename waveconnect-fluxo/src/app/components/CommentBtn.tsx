@@ -2,6 +2,7 @@ import React from "react";
 
 const CommentBtn: React.FC = () => {
   return (
+    // botao de comentario
     <img
       src="/icons/comment.png"
       alt="Comment"

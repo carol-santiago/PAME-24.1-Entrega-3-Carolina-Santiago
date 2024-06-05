@@ -6,6 +6,8 @@ const Cadastro: React.FC = () => {
     <div className="flex h-screen">
       <div className="bg-sage w-1/2 flex justify-center items-center p-20">
         <h1 className="text-beige text-6xl font-extrabold">
+          {" "}
+          {/* titulo com o nome da rede */}
           Welcome to Waveconnect
         </h1>
       </div>
@@ -13,7 +15,7 @@ const Cadastro: React.FC = () => {
         <h2 className="text-sage font-bold text-3xl mb-10">
           Faça seu cadastro!
         </h2>
-        <CadastroForm></CadastroForm>
+        <CadastroForm></CadastroForm> {/* formulario de cadastro */}
       </div>
     </div>
   );
