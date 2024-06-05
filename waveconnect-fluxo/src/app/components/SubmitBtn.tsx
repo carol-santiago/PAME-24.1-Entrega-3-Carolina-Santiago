@@ -9,9 +9,13 @@ interface SubmitBtnProps {
 const SubmitBtn: React.FC<SubmitBtnProps> = ({ name, rota }: any) => {
   return (
     <Link href={rota}>
-      <div className="flex justify-center p-2 bg-sage rounded-2xl text-white font-semibold w-60">
-        <button type="submit">{name}</button>
-      </div>
+      <button
+        type="submit"
+        title="submit"
+        className="flex justify-center p-2 bg-sage rounded-2xl text-white font-semibold w-60"
+      >
+        {name}
+      </button>
     </Link>
   );
 };
