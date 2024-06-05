@@ -1,24 +1,49 @@
 import React from "react";
-import styles from "../styles/Sidebar.module.css";
-import Image from "next/image";
 import Link from "next/link";
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="bg-blue w-20 h-screen flex flex-col items-center justify-center">
-      <Link href="/profile">
-        <Image src="/icons/profile.png" alt="Profile" width={30} height={30} />
+    <div className="w-1/8 h-screen  bg-sage p-4 py-10 mr-6 flex flex-col">
+      <Link href={"home"}>
+        <div className="flex flex-row mb-4 items-center">
+          <img
+            src={"/icons/home.png"}
+            alt="home"
+            className="cursor-pointer  w-9"
+          />
+          <p className="text-white font-semibold">Início</p>
+        </div>
       </Link>
-      <Link href="/notifications">
-        <Image
-          src="/icons/notifications.png"
-          alt="Notifications"
-          width={30}
-          height={30}
-        />
+      <Link href={"profile"}>
+        <div className="flex flex-row mb-4  items-center">
+          <img
+            src={"/icons/profile.png"}
+            alt="profile"
+            className="cursor-pointer w-9"
+          />
+          <p className="text-white font-semibold">Perfil</p>
+        </div>
       </Link>
-      <Link href="/home">
-        <Image src="/icons/home.png" alt="Home" width={30} height={30} />
+
+      <Link href={"notifications"}>
+        <div className="flex flex-row mb-4  items-center">
+          <img
+            src={"/icons/notifications.png"}
+            alt="notifications"
+            className="cursor-pointer w-9"
+          />{" "}
+          <p className="text-white font-semibold">Notificações</p>
+        </div>
+      </Link>
+      <Link href={"login"}>
+        <div className="flex flex-row mb-4 items-center">
+          <img
+            src={"/icons/logout.png"}
+            alt="logout"
+            className="cursor-pointer mr-2 w-9"
+          />
+          <p className="text-white font-semibold">Logout</p>
+        </div>
       </Link>
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 
-const RepostBtn: React.FC = () => {
+const CommentBtn: React.FC = () => {
   return (
     <img
-      src="/icons/repost.png"
-      alt="Repost"
+      src="/icons/comment.png"
+      alt="Comment"
       className="cursor-pointer mr-2 w-8 p-1 rounded-full bg-sage"
     />
   );
 };
 
-export default RepostBtn;
+export default CommentBtn;

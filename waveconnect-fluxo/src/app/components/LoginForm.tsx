@@ -1,41 +1,29 @@
 import React from "react";
-
-// interface LoginFormProps {
-//   setIsLogin: (isLogin: boolean) => void;
-// }
+import SubmitBtn from "../components/SubmitBtn";
 
 const LoginForm: React.FC = () => {
   return (
-    <form className="flex flex-col gap-4 w-80 p-4">
-      <div>
-        <label className="block text-gray-700 mb-1">Usuário</label>
+    <form className="flex flex-col gap-4 w-[60%] p-4 items-center">
+      <div className="w-full">
+        <label className="block mb-1">Usuário</label>
         <input
           type="text"
-          placeholder="Digite seu Usuário"
-          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          placeholder="Digite um nome de Usuário"
+          className="w-full p-2 border rounded focus:outline-none"
+          required
         />
       </div>
-      <div>
-        <label className="block text-gray-700 mb-1">Senha</label>
+      <div className="mb-6 w-full">
+        <label className="block mb-1">Senha</label>
         <input
           type="password"
           placeholder="Digite sua Senha"
-          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          className="w-full p-2 border rounded focus:outline-none"
+          required
         />
       </div>
-      <button
-        type="submit"
-        className="p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >
-        Entrar
-      </button>
-      <button
-        type="button"
-        className="text-blue-500 hover:underline mt-0"
-        //onClick={() => setIsLogin(false)}
-      >
-        Cadastrar nova conta
-      </button>
+      <SubmitBtn name={"Entrar"} rota={"home"}></SubmitBtn>
+      <SubmitBtn name={"Cadastrar nova conta"} rota={"cadastro"}></SubmitBtn>
     </form>
   );
 };

@@ -1,49 +1,47 @@
 import React from "react";
-
-// interface CadastroFormProps {
-//   setIsLogin: (isLogin: boolean) => void;
-// }
+import SubmitBtn from "./SubmitBtn";
 
 const CadastroForm: React.FC = () => {
   return (
-    <form className="flex flex-col gap-4 w-80 p-4">
-      <div>
-        <label className="block text-gray-700 mb-1">Username</label>
+    <form className="flex flex-col gap-4 w-[60%] p-4 items-center">
+      <div className="w-full">
+        <label className="block mb-1">Usuário</label>
         <input
           type="text"
-          placeholder="Username"
-          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          placeholder="Digite um nome de Usuário"
+          className="p-2 border rounded focus:outline-none w-full"
+          required
         />
       </div>
-      <div>
-        <label className="block text-gray-700 mb-1">Email</label>
+      <div className="w-full">
+        <label className="block mb-1">Email</label>
         <input
           type="email"
-          placeholder="Email"
-          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          placeholder="Digite seu email"
+          className="w-full p-2 border rounded focus:outline-none"
+          required
         />
       </div>
-      <div>
-        <label className="block text-gray-700 mb-1">Password</label>
+      <div className="w-full">
+        <label className="block mb-1">Senha</label>
         <input
           type="password"
-          placeholder="Password"
-          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          placeholder="Digite uma senha"
+          className="w-full p-2 border rounded focus:outline-none"
+          required
         />
       </div>
-      <button
-        type="submit"
-        className="p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >
-        Cadastrar
-      </button>
-      <button
-        type="button"
-        className="text-blue-500 hover:underline mt-4"
-        //onClick={() => setIsLogin(true)}
-      >
-        Voltar para Login
-      </button>
+      <div className="w-full mb-6">
+        <label className="block mb-1">Confirme sua senha</label>
+        <input
+          type="password"
+          placeholder="Confirme sua senha"
+          className="w-full p-2 border rounded focus:outline-none"
+          required
+        />
+      </div>
+      <SubmitBtn name="Cadastrar" rota="login"></SubmitBtn>
+      <SubmitBtn name="Voltar para Login" rota="login"></SubmitBtn>
     </form>
   );
 };
