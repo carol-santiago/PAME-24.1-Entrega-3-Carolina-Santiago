@@ -8,9 +8,9 @@ const Notifications = () => {
   return (
     <div className="w-full h-screen flex">
       <Sidebar />
-      <div className="flex flex-col  p-6 py-10 w-full">
+      <div className="flex flex-col w-full h-screen py-10 ml-[350px] mr-16">
         <h1 className="text-3xl font-bold mb-6">Notificações Recentes</h1>
-        <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
+        <div className="w-full bg-white shadow-lg rounded-lg p-6">
           {notifications.length > 0 ? (
             notifications.map((notification) => (
               <div

@@ -8,7 +8,7 @@ const Profile = () => {
   return (
     <div className="w-full h-screen flex flex-row">
       <Sidebar />
-      <div className="flex flex-col items-center p-6 w-5/6">
+      <div className="flex flex-col w-full h-screen py-10 ml-[350px] mr-16">
         <div className="flex flex-col bg-white shadow-md rounded-lg py-7 px-16 w-[100%] justify-around">
           <h1 className="text-2xl font-bold mb-6 self-center">Perfil</h1>
           <div className="flex flex-row ">

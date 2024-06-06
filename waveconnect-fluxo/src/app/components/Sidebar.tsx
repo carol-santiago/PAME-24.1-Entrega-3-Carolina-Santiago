@@ -10,7 +10,7 @@ import logout from "../../../public/icons/logout.png";
 const Sidebar: React.FC = () => {
   return (
     // barra lateral com links para as paginas
-    <div className="w-1/8   bg-sage p-2 py-10 mr-6 flex flex-col h-[100vh]">
+    <div className="w-fit bg-sage pl-2 py-10 flex flex-col h-screen fixed">
       <div className="flex flex-row mb-4 items-center">
         {/* barra de pesquisa - AO CLICAR NA LUPA, LEVA PARA A LISTA DE USERS */}
         {/* funcionalidade real ainda nao implementada */}
@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
           type="text"
           title="search"
           placeholder="Pesquisar..."
-          className="w-[60%] p-1 ml-2 border border-white rounded 
+          className="w-[70%] p-1 ml-2 border border-white rounded 
           focus:outline-none placeholder:text-sm"
         />
       </div>

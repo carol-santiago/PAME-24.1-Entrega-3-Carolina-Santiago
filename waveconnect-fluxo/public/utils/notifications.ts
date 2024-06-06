@@ -7,7 +7,7 @@ export const notifications = [
   },
   {
     id: 3,
-    message: "@User2 comentou no seu post.",
+    message: "@xXcharlieXx comentou no seu post.",
     time: "2 dias atrás",
   },
 ];
